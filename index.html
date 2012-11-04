@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Earthquake sim v3.0</title>
+<style type="text/css">
+<!--
+  :link { color: rgb(110, 0, 110); } 
+  :visited { color: rgb(110, 0, 110); } 
+  html {background: url(background.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+  body { margin-left: 5px; font-family: arial, sans-serif; font-size: 10pt; } 
+  p { margin-left: 10px; color: #333} 
+-->
+</style>
+</head>
+<body>
+
+<p><strong> 9.1.2011 -- Version 3.0 </strong></p>
+
+<p>Hey guys! I hope this all works out. Basically, the dots moving around here represent people; you're looking at a bird's eye view of a neighborhood. People are hurt to varying degrees: white dots are unhurt, pink dots are injured and thus walk more slowly, and red dots are critically injured and require immediate care in the form of ambulances, which are the blue arrows driving around the screen. The people all want to escape the neighborhood, which they do by taking the shortest route possible out. You can change the proportion of people who are hurt by adjusting the sliders. <font color="#F000A0">To run the simulation, first click "setup", then click "go".</p></font>
+
+<p>By adjusting "pace", you can exponentially speed up or slow down the speed of the people; this can also be done by adjusting the slider at the top of the window. "Number" refers to the total number of people walking around. "Ticks per ambulance" refers to the frequency at which ambulances appear, and the graph on the right marks the total number of people still left in the neighborhood. The simulation should stop when everyone is evacuated.</p>
+
+<p>And so this is the third installment, but it's always being improved, so -- let me know what you think! Please don't hesitate to send all questions, comments, etc. to jason.adleberg@gmail.com. Thanks again!</p>
+
+<p>The applet requires Java 5 or higher.
+Java must be enabled in your browser settings.
+Mac users must have Mac OS X 10.4 or higher.
+Windows and Linux users may obtain the latest Java from
+<a href="http://java.sun.com/getjava/download.html">Sun's Java site</a>.</p>
+
+<p>
+<applet code="org.nlogo.lite.Applet"
+        archive="NetLogoLite.jar"
+        width="1306" height="472">
+  <param name="DefaultModel"
+         value="earthquake_final.nlogo">
+</applet>
+</p>
+
+<p>powered by
+<a target="_blank" href="http://ccl.northwestern.edu/netlogo/">NetLogo</a></p>
+
+<p>view/download model file:
+<a href="earthquake_dead.nlogo">earthquake.nlogo</a>
+</p></body>
+</html>
